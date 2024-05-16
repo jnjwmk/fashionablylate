@@ -15,7 +15,7 @@
 6. php artisan db:seed
 
 ## 使用技術
-＊ PHP 8.2.8
+* PHP 8.2.8
 * Laravel 8.83.27
 * MySQL 8.0.26
 

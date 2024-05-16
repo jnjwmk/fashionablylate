@@ -1,0 +1,41 @@
+.confirm {
+    background: #fff;
+    /* height: 1230px; */
+    border-top: 0.5px solid #d5cabb8a;
+    margin: 0 auto;
+}
+
+.confirm__logo {
+    color: #6f5b40;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.confirm-form {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30%;
+    align-items: center;
+    width: 100%;
+}
+.confirm-table{
+    
+}
+
+
+.confirm-table__row {
+    
+}
+
+.confirm-table__header {
+    color:#fff;
+    background-color: #7b613b8a;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.confirm-table__text {
+    
+}

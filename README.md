@@ -19,6 +19,10 @@
 * Laravel 8.83.27
 * MySQL 8.0.26
 
+## ER図
+![fashionably drawio](https://github.com/jnjwmk/fashionablylate/assets/156893732/b5dce356-3fff-4486-a377-534513016885)
+
+
 ## URL
 * 開発環境　: (http://localhost)
 * phpMyAdmin : (http://localhost:8080)

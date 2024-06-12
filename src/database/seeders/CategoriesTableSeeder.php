@@ -14,15 +14,18 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-        $param = [
-            'content' => ['商品のお届けについて',
-            '商品の交換について',
-            '商品トラブル',
-            'ショップへのお問い合わせ',
-            'その他']
-
+        $contents = [
+            "商品のお届けについて",
+            "商品の交換について",
+            "商品トラブル",
+            "ショップへのお問い合わせ",
+            "その他"
         ];
 
-        DB::table('categories')->insert($param);
+        foreach ($contents as $content) {
+            DB::table('categories')->insert([
+                'content' => $content,
+            ]);
+        }
     }
 }

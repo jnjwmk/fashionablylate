@@ -1,16 +1,12 @@
 @extends('layouts.app')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/login1.css') }}" />
+<link rel="stylesheet" href="{{ asset('css/login.css') }}" />
 @endsection
 
-<!-- 登録ボタン -->
-<div class="header__register">
-    <button class="header__register--item">
-        <a class="header__register-button" href="/register">register
-        </a>
-    </button>
-</div>
+@section('link')
+<a class="header__link" href="/register">register</a>
+@endsection
 
 @section('content')
 <div class="login">

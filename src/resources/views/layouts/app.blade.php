@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FashionablyLate</title>
     <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/common0510.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/common1.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
@@ -15,18 +15,18 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__inner">
-            <h1>FashionablyLate</h1>
-            <!-- <div class="header__right">
-                <button class="header__right--item">login</button>
-            </div> -->
-        </div>
-    </header>
+    <div class="app">
+        <header class="header">
+            <div class="header__inner">
+                <h1>FashionablyLate</h1>
+            @yield('link')
+            </div>
+        </header>
 
-    <main>
+        <div class="content">
         @yield('content')
-    </main>
+        </div>
+    </div>
 </body>
 
 </html>

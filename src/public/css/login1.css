@@ -81,6 +81,10 @@
     font-size: 14px;
 }
 
+.form-login__error{
+    color:red;
+}
+
 .form__button {
     text-align: center;
     margin-top: 40px;

@@ -19,36 +19,41 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/',[ContactController::class,'index']);
 
+Route::get('/confirm',[ContactController::class,'confirm']);
+Route::post('/confirm',[ContactController::class,'confirm']);
+
+Route::post('/thanks',[ContactController::class,'store']);
 // register画面を表示
-Route::get('/register',[RegisterController::class, 'register']);
+// Route::get('/register',[RegisterController::class, 'auth/register']);
 //データ受け取り、表示
-Route::post('/register',[RegisterController::class,'create']);
+// Route::post('/register',[RegisterController::class,'create']);
 // dbに作成
-Route::post('/register',[RegisterController::class, 'store']);
+// Route::post('/register',[RegisterController::class, 'store']);
 
 // login画面を表示
-Route::get('/login',[LoginController::class,'index']);
+// Route::get('/login',[LoginController::class,'index']);
 //
-Route::post('/login',[LoginController::class,'store']);
+// Route::post('/login',[LoginController::class,'store']);
 
-// 管理画面を表示
-Route::get('/admin', [AdminController::class, 'admin']);
+// // 管理画面を表示
+// Route::get('/admin', [AdminController::class, 'admin']);
 
-//コンタクト画面を表示
-Route::get('/contact',[ContactController::class,'contact']);
+// //コンタクト画面を表示
+// Route::get('/contact',[ContactController::class,'contact']);
 
-// データ挿入
-Route::post('/contact',[ContactController::class,'create']);
-//contactバリデーション
-Route::post('/contact',[ContactController::class,'store']);
+// // データ挿入
+// Route::post('/contact',[ContactController::class,'create']);
+// //contactバリデーション
+// Route::post('/contact',[ContactController::class,'store']);
 
-// 確認画面を押した時
-Route::post('/confirm', [ConfirmController::class, 'confirm']);
+// // 確認画面を押した時
+// Route::post('/confirm', [ConfirmController::class, 'confirm']);
 
 
-// thanks画面表示
-Route::get('/thanks',[ThanksController::class,'thanks']);
+// // thanks画面表示
+// Route::get('/thanks',[ThanksController::class,'thanks']);
 
 
 // Route::post('/confirm',[ContactController::class,'confirm']);

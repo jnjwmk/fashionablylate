@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/login.css') }}" />
+<link rel="stylesheet" href="{{ asset('css/login1.css') }}" />
 @endsection
 
 @section('link')
@@ -26,10 +26,12 @@
                 {{ $message }}
                 @enderror
             </div>
+
             <div class="login-form--item">
                 <label class="form__label" for="password">パスワード</label><br>
                 <input class="login-form__input-item" type="password" name="password" id="password" placeholder="例:coachtech1106">
             </div>
+
             <div class="form-login__error">
                 @error('password')
                 {{ $message }}

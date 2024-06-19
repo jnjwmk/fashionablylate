@@ -113,6 +113,11 @@ textarea {
     border: #f4f4f494;
 }
 
+.contact-form__error-message {
+    color: red;
+    font-size: 12px;
+}
+
 .contact__button {
     text-align: center;
 }
